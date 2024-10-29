@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { literata } from '@/app/fonts/font';
 import SwitchDarkMode from './Switchdarkmode';
 
 export default function Header() {
@@ -33,7 +34,7 @@ export default function Header() {
           {/* Mobile Menu (hidden by default, shown when isMenuOpen) */}
           <nav
             aria-label="Global"
-            className={`fixed inset-0 z-50 flex-col items-center justify-center bg-white dark:bg-gray-800 p-10 text-center space-y-6 transform transition-transform ${
+            className={`fixed ${literata.className} inset-0 z-50 flex-col items-center justify-center bg-white dark:bg-gray-800 p-10 text-center space-y-6 transform transition-transform ${
               isMenuOpen ? 'translate-x-0' : '-translate-x-full'
             } md:translate-x-0 md:relative md:bg-transparent md:dark:bg-transparent md:flex md:space-y-0 md:space-x-6 md:flex-row`}
           >
@@ -46,27 +47,27 @@ export default function Header() {
                 &times; {/* Use an 'X' character to indicate closing */}
               </button>
             )}
-            <ul className="flex flex-col md:flex-row items-center gap-6 text-sm">
+            <ul className="flex flex-col md:flex-row items-center gap-6 text-sm font-bold">
               <li>
-                <Link href="#QuemSomos" className="text-gray-500 transition hover:text-blue-600 dark:text-white dark:hover:text-blue-600 text-lg" onClick={closeMenu}>
+                <Link href="/#QuemSomos" className="text-gray-500 transition hover:text-blue-600 dark:text-white dark:hover:text-blue-600 text-lg" onClick={closeMenu}>
                   Quem Somos
                 </Link>
               </li>
 
               <li>
-                <Link href="#Servicos" className="text-gray-500 transition hover:text-blue-600 dark:text-white dark:hover:text-blue-600 text-lg" onClick={closeMenu}>
+                <Link href="/#Servicos" className="text-gray-500 transition hover:text-blue-600 dark:text-white dark:hover:text-blue-600 text-lg" onClick={closeMenu}>
                   Serviços
                 </Link>
               </li>
 
               <li>
-                <Link href="#Qualidades" className="text-gray-500 transition hover:text-blue-600 dark:text-white dark:hover:text-blue-600 text-lg" onClick={closeMenu}>
+                <Link href="/#Qualidades" className="text-gray-500 transition hover:text-blue-600 dark:text-white dark:hover:text-blue-600 text-lg" onClick={closeMenu}>
                   Qualidades
                 </Link>
               </li>
 
               <li>
-                <Link href="#Blog" className="text-gray-500 transition hover:text-blue-600 dark:text-white dark:hover:text-blue-600 text-lg" onClick={closeMenu}>
+                <Link href="/#Blog" className="text-gray-500 transition hover:text-blue-600 dark:text-white dark:hover:text-blue-600 text-lg" onClick={closeMenu}>
                   Blog
                 </Link>
               </li>

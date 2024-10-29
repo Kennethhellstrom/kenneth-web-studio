@@ -50,23 +50,23 @@ export default function Footer() {
 
                     <div className="grid grid-cols-1  text-center lg:grid-cols-1 lg:text-left dark:text-slate-100">
                         <div>
-                            <Link href="#QuemSomos">
+                            <Link href="/#QuemSomos">
                                 <strong className="font-medium text-gray-900 dark:text-slate-100 "> Quem Somos </strong>
                             </Link>
                         </div>
 
                         <div>
-                            <Link href="#Servicos">
+                            <Link href="/#Servicos">
                                 <strong className="font-medium text-gray-900 dark:text-slate-100 "> Serviços </strong>
                             </Link>
                         </div>
                         <div>
-                            <Link href="#Qualidades">
+                            <Link href="/#Qualidades">
                                 <strong className="font-medium text-gray-900 dark:text-slate-100 "> Qualidades </strong>
                             </Link>
                         </div>
                         <div>
-                            <Link href="#Blog">
+                            <Link href="/#Blog">
                                 <strong className="font-medium text-gray-900 dark:text-slate-100 "> Blog </strong>
                             </Link>
                         </div>
@@ -88,12 +88,12 @@ export default function Footer() {
                             <YoutubeSvg /> */}
                         </div>
 
-                        <EntreEmContatoButton link={""} />
+                        <EntreEmContatoButton link="https://wa.me/5585999573608?text=Quero%20minha%20presen%C3%A7a%20digital!" />
                     </div>
                 </div>
                 <div className="mt-16 border-t border-gray-100 pt-8">
                     <p className="text-center text-xs/relaxed text-gray-500">
-                        © Company 2024. All rights reserved.
+                        © Kenneth Hellstrom 2024. All rights reserved.
                     </p>
                 </div>
             </div>

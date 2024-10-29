@@ -18,7 +18,7 @@ export const metadata: Metadata = {
       siteName: 'Kenneth Web Studio',
       images: [
           {
-              url: '/images/avatar.webp', // URL da imagem para Open Graph
+              url: '/images/logo.webp', // URL da imagem para Open Graph
               width: 800,
               height: 600,
               alt: 'Imagem de exemplo para desenvolvimento de sites',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
       card: 'summary_large_image',
       title: 'Desenvolvimento de Sites Profissionais | Sua Empresa',
       description: 'Oferecemos serviços de desenvolvimento de sites personalizados, otimizados para SEO e com design responsivo.',
-      images: ['/images/avatar.webp'], 
+      images: ['/images/logo.webp'], 
   },
 };
 
