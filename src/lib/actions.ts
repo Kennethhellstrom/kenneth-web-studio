@@ -25,7 +25,9 @@ const FormOrcamentoSchema = z.object({
     incluir_no_orcamento: z.enum(['sim', 'nao'], {
         invalid_type_error: 'Por favor, escolha uma opção.',
     })
-    .transform((val) => (val === 'sim' ? true : false)), // Muda a transformação para retornar apenas true ou false
+    .transform((val) => (val === 'sim' ? true : false))
+    .nullable()
+    .optional(), 
 
     possui_site: z.boolean({
         invalid_type_error: 'Por favor, escolha uma opção.',
@@ -81,6 +83,18 @@ console.log("metodo começou")
         descricao: formData.get('descricao')?.toString(),
         receber_novidades: formData.has('notificacoes'), 
     });
+        console.log(validatedFields.data)
+        console.log(validatedFields.data?.nome)
+        console.log(formData.get('sobrenome'))
+        console.log(formData.get('email'))
+        console.log(formData.get('telefone'))
+        console.log(formData.getAll('servicos_interesse'))
+        console.log(formData.get('possui_fotos'))
+        console.log(formData.get('incluir_no_orcamento'))
+        console.log(formData.get('hasWebsite'))
+        console.log(formData.get('website'))
+        console.log(formData.get('descricao'))
+        console.log(formData.has('notificacoes'))
 
 
 
@@ -113,12 +127,12 @@ console.log("metodo começou")
 
 
     catch (error) {
-        console.error('Erro ao criar cliente:', error);
+        //console.log('Erro ao criar cliente:', error);
         return {
-            message: 'Falha ao criar orçamento devido a um erro no servidor.',
+            message: 'Falha ao criar orçamento devido a um erro no servidor. ' +error,
         };
     } finally {
         const prisma = new PrismaClient();
-        await prisma.$disconnect(); // Garante que a conexão seja fechada
+        await prisma.$disconnect(); 
     }
 }

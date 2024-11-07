@@ -17,7 +17,7 @@ model Cliente {
   id                  Int      @id @default(autoincrement())
   nome                String
   sobrenome           String
-  email               String   @unique
+  email               String   
   telefone            String
   servicos_interesse  String[] // Armazena a lista de serviços como um array
   possui_fotos        Boolean

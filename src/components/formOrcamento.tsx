@@ -185,23 +185,23 @@ export default function FormOrcamento() {
         aria-live="polite"
         aria-atomic="true"
         className={`transition-opacity duration-300 ease-in-out ${state.message ? 'opacity-100' : 'opacity-0'
-          } mt-4 flex items-center max-w-md rounded-lg bg-green-50 p-4 shadow-lg`}
+          } mt-4 flex items-center max-w-md rounded-lg bg-green-50 p-4 shadow-lg border-l-4 border-green-400`}
       >
         {state.message && (
           <>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 text-green-600 mr-2"
+              className="h-6 w-6 text-green-600 mr-3"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
               <path
                 fillRule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1.707-7.293a1 1 0 011.414 0L10 10.586l1.293-1.293a1 1 0 111.414 1.414L11.414 12l1.293 1.293a1 1 0 01-1.414 1.414L10 13.414l-1.293 1.293a1 1 0 01-1.414-1.414L8.586 12l-1.293-1.293a1 1 0 010-1.414z"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.707a1 1 0 00-1.414-1.414L9 11.586 7.707 10.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                 clipRule="evenodd"
               />
             </svg>
-            <p className="text-green-700 text-sm font-medium">{state.message}</p>
+            <p className="text-green-800 text-sm font-semibold">{state.message}</p>
           </>
         )}
       </div>

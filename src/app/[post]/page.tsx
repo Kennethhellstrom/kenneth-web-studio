@@ -1,15 +1,16 @@
 import Image from "next/image";
 import { Avatar } from "@nextui-org/react";
-
+import { PageProps } from "../../../.next/types/app/page";
 interface PostContentProps {
     params: {
         post: string; // Slug vindo da URL
     };
 }
 
-export default async function PostContent({ params }: PostContentProps) {
+export default async function Page({ params }: PageProps) {
     const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
-    const url = `${BASE_URL}${params.post}`;
+    const resolvedParams = await params;
+    const url = `${BASE_URL}${resolvedParams.post}`;
 
     const response = await fetch(url);
     const data = await response.json();
