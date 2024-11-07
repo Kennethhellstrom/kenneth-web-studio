@@ -11,7 +11,7 @@ const advantages = [
 
 export default function Qualidades() {
     return (
-        <section className="dark:bg-gray-900 bg-white text-gray-900" id="Qualidades">
+        <section className="dark:bg-slate-800 bg-white text-gray-900" id="Qualidades">
             <div className="max-w-screen-xl mx-auto px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
                 <div className="max-w-xl">
                     <h2 className="text-3xl font-bold sm:text-4xl dark:text-slate-100">Por Que Escolher a Kenneth Web Studio?</h2>

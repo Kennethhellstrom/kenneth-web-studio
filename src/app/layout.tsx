@@ -7,21 +7,21 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/wppButton";
 
 export const metadata: Metadata = {
-  title: 'Desenvolvimento de Sites Profissionais | Kenneth Web Studio',
-  description: 'Oferecemos serviços de desenvolvimento de sites personalizados, otimizados para SEO e com design responsivo.',
-  keywords: 'desenvolvimento de sites, criação de sites, web design, SEO, sites responsivos',
+  title: 'Desenvolvimento de Sites Profissionais | Kenneth Hellstrom',
+  description: 'Kenneth Hellstrom oferece serviços de desenvolvimento de sites personalizados, otimizados para SEO e com design responsivo.',
+  keywords: 'Kenneth Hellstrom, desenvolvimento de sites, criação de sites, web design, SEO, sites responsivos',
   authors: [{ name: 'Kenneth Hellstrom', url: 'https://www.kennethwebstudio.com.br' }],
   openGraph: {
-      title: 'Desenvolvimento de Sites Profissionais | Sua Empresa',
-      description: 'Oferecemos serviços de desenvolvimento de sites personalizados, otimizados para SEO e com design responsivo.',
+      title: 'Desenvolvimento de Sites Profissionais | Kenneth Hellstrom',
+      description: 'Kenneth Hellstrom oferece serviços de desenvolvimento de sites personalizados, otimizados para SEO e com design responsivo.',
       url: 'https://www.kennethwebstudio.com.br',
       siteName: 'Kenneth Web Studio',
       images: [
           {
-              url: '/images/logo.webp', // URL da imagem para Open Graph
+              url: '/images/logo.webp',
               width: 800,
               height: 600,
-              alt: 'Imagem de exemplo para desenvolvimento de sites',
+              alt: 'Logo do Kenneth Web Studio',
           },
       ],
       locale: 'pt_BR',
@@ -29,11 +29,12 @@ export const metadata: Metadata = {
   },
   twitter: {
       card: 'summary_large_image',
-      title: 'Desenvolvimento de Sites Profissionais | Sua Empresa',
-      description: 'Oferecemos serviços de desenvolvimento de sites personalizados, otimizados para SEO e com design responsivo.',
-      images: ['/images/logo.webp'], 
+      title: 'Desenvolvimento de Sites Profissionais | Kenneth Hellstrom',
+      description: 'Kenneth Hellstrom oferece serviços de desenvolvimento de sites personalizados, otimizados para SEO e com design responsivo.',
+      images: ['/images/logo.webp'],
   },
 };
+
 
 
 export default function RootLayout({

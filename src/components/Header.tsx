@@ -17,7 +17,7 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-white dark:bg-gray-900 h-32 ">
+    <header className="bg-sky-300/15 dark:bg-gray-900 h-32 ">
   <div className="mx-auto flex h-full max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8">
         <Link href="/" className="text-teal-600 dark:text-teal-300">
           <span className="sr-only">Home</span>
@@ -49,36 +49,36 @@ export default function Header() {
             )}
             <ul className="flex flex-col md:flex-row items-center gap-6 text-sm font-bold">
               <li>
-                <Link href="/#QuemSomos" className="text-gray-500 transition hover:text-blue-600 dark:text-white dark:hover:text-blue-600 text-lg" onClick={closeMenu}>
+                <Link href="/#QuemSomos" className="text-gray-500 transition hover:text-blue-600 dark:text-white dark:hover:text-blue-400 text-lg" onClick={closeMenu}>
                   Quem Somos
                 </Link>
               </li>
 
               <li>
-                <Link href="/#Servicos" className="text-gray-500 transition hover:text-blue-600 dark:text-white dark:hover:text-blue-600 text-lg" onClick={closeMenu}>
+                <Link href="/#Servicos" className="text-gray-500 transition hover:text-blue-600 dark:text-white dark:hover:text-blue-400 text-lg" onClick={closeMenu}>
                   Serviços
                 </Link>
               </li>
 
               <li>
-                <Link href="/#Qualidades" className="text-gray-500 transition hover:text-blue-600 dark:text-white dark:hover:text-blue-600 text-lg" onClick={closeMenu}>
+                <Link href="/#Qualidades" className="text-gray-500 transition hover:text-blue-600 dark:text-white dark:hover:text-blue-400 text-lg" onClick={closeMenu}>
                   Qualidades
                 </Link>
               </li>
 
               <li>
-                <Link href="/#Blog" className="text-gray-500 transition hover:text-blue-600 dark:text-white dark:hover:text-blue-600 text-lg" onClick={closeMenu}>
+                <Link href="/#Blog" className="text-gray-500 transition hover:text-blue-600 dark:text-white dark:hover:text-blue-400 text-lg" onClick={closeMenu}>
                   Blog
                 </Link>
               </li>
 
-              {/* <li>
-                <Link href="/projects" className="text-gray-500 transitionv  hover:text-blue-600 dark:text-white dark:hover:text-blue-600 text-lg" onClick={closeMenu}>
-                  Projects
+               <li>
+                <Link href="/#Form" className="text-gray-500 transitionv  hover:text-blue-600 dark:text-white dark:hover:text-blue-400 text-lg" onClick={closeMenu}>
+                  Orçamento Rapido
                 </Link>
               </li>
 
-              <li>
+              {/*<li>
                 <Link href="/blog" className="text-gray-500 transition hover:text-blue-600 dark:text-white dark:hover:text-blue-600 text-lg" onClick={closeMenu}>
                   Blog
                 </Link>

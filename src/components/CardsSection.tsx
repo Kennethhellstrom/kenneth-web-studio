@@ -36,7 +36,7 @@ export default function CardsSection() {
         }
     ];
     return (
-        <section className="dark:bg-black-900 bg-sky-300/15 text-white" id="Servicos">
+        <section className="dark:bg-slate-800  text-white" id="Servicos">
             <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
                 <div className="mx-auto max-w-lg text-center text-black dark:text-white">
                     <h2 className="text-3xl font-bold sm:text-4xl">Nossos Serviços</h2>

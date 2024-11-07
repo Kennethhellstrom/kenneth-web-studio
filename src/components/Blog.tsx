@@ -9,7 +9,7 @@ export default async function Blog() {
     const data = await response.json();
     
     return (
-        <section className="dark:bg-black-900 bg-sky-300/15 text-white" id="Servicos">
+        <section className="dark:border-y-gray-900 bg-sky-300/15 text-white" id="Servicos">
             <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
                 <div className="mx-auto max-w-lg text-center text-black dark:text-white">
                     <h2 className="text-3xl font-bold sm:text-4xl">Blog</h2>
