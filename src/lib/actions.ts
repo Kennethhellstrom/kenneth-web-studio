@@ -67,7 +67,7 @@ export async function RegistrarCliente(prevState: State, formData: FormData) {
     try {
 
 console.log("metodo começou")
-    let prisma = new PrismaClient();
+    const prisma = new PrismaClient();
     const validatedFields = FormOrcamentoSchema.safeParse({
         nome: formData.get('nome')?.toString(),
         sobrenome: formData.get('sobrenome')?.toString(),
@@ -81,18 +81,6 @@ console.log("metodo começou")
         descricao: formData.get('descricao')?.toString(),
         receber_novidades: formData.has('notificacoes'), 
     });
-        console.log(validatedFields.data)
-        console.log(validatedFields.data?.nome)
-        console.log(formData.get('sobrenome'))
-        console.log(formData.get('email'))
-        console.log(formData.get('telefone'))
-        console.log(formData.getAll('servicos_interesse'))
-        console.log(formData.get('possui_fotos'))
-        console.log(formData.get('incluir_no_orcamento'))
-        console.log(formData.get('hasWebsite'))
-        console.log(formData.get('website'))
-        console.log(formData.get('descricao'))
-        console.log(formData.has('notificacoes'))
 
 
 
@@ -130,7 +118,7 @@ console.log("metodo começou")
             message: 'Falha ao criar orçamento devido a um erro no servidor.',
         };
     } finally {
-        let prisma = new PrismaClient();
+        const prisma = new PrismaClient();
         await prisma.$disconnect(); // Garante que a conexão seja fechada
     }
 }
